@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>deflator</name>
+    <version>0.2.1</version>
+    <author>Artem Kuznetsov</author>
+    <author-email>ArKuznetsov@gmail.com</author-email>
+    <description>Упаковщик deflate для oscript</description>
+    <engine-version>1.6</engine-version>
+</opm-metadata>

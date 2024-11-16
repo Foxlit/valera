@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>nextcloud-lib</name>
+    <version>0.3.0</version>
+    <author>Artem Kuznetsov</author>
+    <author-email>ArKuznetsov@gmail.com</author-email>
+    <description>Библиотека работы с сервисом NextCloud</description>
+    <engine-version>1.7.0</engine-version>
+    <depends-on name="fs" dev="false"/>
+    <depends-on name="logos" dev="false"/>
+    <depends-on name="1connector" dev="false"/>
+    <depends-on name="1testrunner" dev="true"/>
+    <depends-on name="1commands" dev="true"/>
+    <depends-on name="asserts" dev="true"/>
+</opm-metadata>
