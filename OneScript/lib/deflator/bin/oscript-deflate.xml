@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>oscript-deflate</name>
+    </assembly>
+    <members>
+        <member name="T:oscriptcomponent.DeflatePacker">
+            <summary>
+            Предоставляет методы для упаковки / распаковки данных по алгоритму Deflate
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.CompressData(ScriptEngine.Machine.IValue,System.Int32)">
+            <summary>
+            Выполняет упаковку двоичных данных по алгоритму Deflate
+            </summary>
+            <param name="InputData">ДвоичныеДанные. Данные для упаковки.</param>
+            <param name="OutputCompressionLevel">Число. Уровень сжатия (0-2).</param>
+            <returns>ДвоичныеДанные - Результат упаковки</returns>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.DecompressData(ScriptEngine.Machine.IValue)">
+            <summary>
+            Выполняет распаковку данных по алгоритму Deflate
+            </summary>
+            <param name="InputData">Поток. Исходный поток для распаковки.</param>
+            <returns>ДвоичныеДанные - Результат распаковки</returns>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.CompressStream(ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue,System.Int32)">
+            <summary>
+            Выполняет упаковку входящего потока по алгоритму Deflate
+            </summary>
+            <param name="InputStream">Поток. Исходный поток для упаковки.</param>
+            <param name="OutputStream">Поток. Результат упаковки.</param>
+            <param name="OutputCompressionLevel">Число. Уровень сжатия (0-2).</param>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.DecompressStream(ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue)">
+            <summary>
+            Выполняет распаковку входящего потока по алгоритму Deflate
+            </summary>
+            <param name="InputStream">Поток. Исходный поток для распаковки.</param>
+            <param name="OutputStream">Поток. Результат распаковки.</param>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.CompressFile(ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue,System.Int32)">
+            <summary>
+            Выполняет упаковку указанного файла по алгоритму Deflate
+            </summary>
+            <param name="InputFileName">Строка. Путь к файлу для упаковки.</param>
+            <param name="OutputFileName">Строка. Путь к файлу - результату упаковки.</param>
+            <param name="OutputCompressionLevel">Число. Уровень сжатия (0-2).</param>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.DecompressFile(ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue)">
+            <summary>
+            Выполняет распаковку указанного файла по алгоритму Deflate
+            </summary>
+            <param name="InputFileName">Строка. Путь к файлу для распаковки.</param>
+            <param name="OutputFileName">Строка. Путь к файлу - результату распаковки.</param>
+        </member>
+        <member name="M:oscriptcomponent.DeflatePacker.Constructor">
+            <summary>
+            Создает УпаковщикDeflate
+            </summary>
+            <returns>УпаковщикDeflate</returns>
+        </member>
+    </members>
+</doc>

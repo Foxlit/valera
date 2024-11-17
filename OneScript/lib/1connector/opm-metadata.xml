@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>1connector</name>
+    <version>2.3.3</version>
+    <author>Vladimir Bondarevskiy</author>
+    <author-email>vbondarevsky@gmail.com</author-email>
+    <description>Коннектор: удобный HTTP-клиент для OScript</description>
+    <engine-version>1.2.0</engine-version>
+    <depends-on name="1bdd" dev="true"/>
+    <depends-on name="1testrunner" dev="true"/>
+    <depends-on name="asserts" dev="true"/>
+    <depends-on name="coverage" dev="true"/>
+</opm-metadata>

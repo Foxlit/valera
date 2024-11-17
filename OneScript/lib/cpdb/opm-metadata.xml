@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>cpdb</name>
+    <version>1.5.3</version>
+    <engine-version>1.6.0</engine-version>
+    <depends-on name="logos" dev="false"/>
+    <depends-on name="1commands" dev="false"/>
+    <depends-on name="cli" dev="false"/>
+    <depends-on name="v8runner" dev="false" version="1.9.0"/>
+    <depends-on name="v8storage" dev="false"/>
+    <depends-on name="ParserFileV8i" dev="false"/>
+    <depends-on name="fs" dev="false"/>
+    <depends-on name="yadisk" dev="false"/>
+    <depends-on name="json" dev="false"/>
+    <depends-on name="nextcloud-lib" dev="false"/>
+    <depends-on name="ClientSSH" dev="false" version="0.5.1"/>
+    <depends-on name="deflator" dev="false" version="0.2.1"/>
+    <depends-on name="1testrunner" dev="true"/>
+    <depends-on name="asserts" dev="true"/>
+    <executable name="cpdb">src/cmd/cpdb.os</executable>
+</opm-metadata>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<opm-metadata xmlns="http://oscript.io/schemas/opm-metadata/1.0">
+    <name>ClientSSH</name>
+    <version>0.5.1</version>
+    <author>a.sosnoviy aka lab; Artem Kuznetsov</author>
+    <author-email>int-it@yandex.ru; ArKuznetsov@gmail.com</author-email>
+    <description>ssh client для oscript</description>
+    <engine-version>1.6</engine-version>
+</opm-metadata>

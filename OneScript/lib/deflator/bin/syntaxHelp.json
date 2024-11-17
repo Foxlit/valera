@@ -1,0 +1,112 @@
+{
+  "structureMenu": {
+    "classes": {
+      "Прочее": ""
+    }
+  },
+  "classes": {
+    "УпаковщикDeflate": {
+      "name": "УпаковщикDeflate",
+      "name_en": "DeflatePacker",
+      "description": "Предоставляет методы для упаковки / распаковки данных по алгоритму Deflate",
+      "constructors": {
+        "По умолчанию": {
+          "name": "По умолчанию",
+          "signature": "()",
+          "description": "Создает УпаковщикDeflate",
+          "returns": "УпаковщикDeflate"
+        }
+      },
+      "methods": {
+        "УпаковатьДанные": {
+          "name": "УпаковатьДанные",
+          "name_en": "CompressData",
+          "description": "Выполняет упаковку двоичных данных по алгоритму Deflate",
+          "returns": "ДвоичныеДанные - Результат упаковки",
+          "signature": {
+            "default": {
+              "СтрокаПараметров": "(InputData: Произвольный, OutputCompressionLevel?: Число): Произвольный",
+              "Параметры": {
+                "InputData": "ДвоичныеДанные. Данные для упаковки.",
+                "OutputCompressionLevel": "Число. Уровень сжатия (0-2)."
+              }
+            }
+          }
+        },
+        "РаспаковатьДанные": {
+          "name": "РаспаковатьДанные",
+          "name_en": "DecompressData",
+          "description": "Выполняет распаковку данных по алгоритму Deflate",
+          "returns": "ДвоичныеДанные - Результат распаковки",
+          "signature": {
+            "default": {
+              "СтрокаПараметров": "(InputData: Произвольный): Произвольный",
+              "Параметры": {
+                "InputData": "Поток. Исходный поток для распаковки."
+              }
+            }
+          }
+        },
+        "УпаковатьПоток": {
+          "name": "УпаковатьПоток",
+          "name_en": "CompressStream",
+          "description": "Выполняет упаковку входящего потока по алгоритму Deflate",
+          "signature": {
+            "default": {
+              "СтрокаПараметров": "(InputStream: Произвольный, OutputStream: Произвольный, OutputCompressionLevel?: Число)",
+              "Параметры": {
+                "InputStream": "Поток. Исходный поток для упаковки.",
+                "OutputStream": "Поток. Результат упаковки.",
+                "OutputCompressionLevel": "Число. Уровень сжатия (0-2)."
+              }
+            }
+          }
+        },
+        "РаспаковатьПоток": {
+          "name": "РаспаковатьПоток",
+          "name_en": "DecompressStream",
+          "description": "Выполняет распаковку входящего потока по алгоритму Deflate",
+          "signature": {
+            "default": {
+              "СтрокаПараметров": "(InputStream: Произвольный, OutputStream: Произвольный)",
+              "Параметры": {
+                "InputStream": "Поток. Исходный поток для распаковки.",
+                "OutputStream": "Поток. Результат распаковки."
+              }
+            }
+          }
+        },
+        "УпаковатьФайл": {
+          "name": "УпаковатьФайл",
+          "name_en": "CompressFile",
+          "description": "Выполняет упаковку указанного файла по алгоритму Deflate",
+          "signature": {
+            "default": {
+              "СтрокаПараметров": "(InputFileName: Произвольный, OutputFileName: Произвольный, OutputCompressionLevel?: Число)",
+              "Параметры": {
+                "InputFileName": "Строка. Путь к файлу для упаковки.",
+                "OutputFileName": "Строка. Путь к файлу - результату упаковки.",
+                "OutputCompressionLevel": "Число. Уровень сжатия (0-2)."
+              }
+            }
+          }
+        },
+        "РаспаковатьФайл": {
+          "name": "РаспаковатьФайл",
+          "name_en": "DecompressFile",
+          "description": "Выполняет распаковку указанного файла по алгоритму Deflate",
+          "signature": {
+            "default": {
+              "СтрокаПараметров": "(InputFileName: Произвольный, OutputFileName: Произвольный)",
+              "Параметры": {
+                "InputFileName": "Строка. Путь к файлу для распаковки.",
+                "OutputFileName": "Строка. Путь к файлу - результату распаковки."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "systemEnum": {}
+}

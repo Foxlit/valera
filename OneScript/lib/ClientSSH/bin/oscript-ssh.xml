@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>oscript-ssh</name>
+    </assembly>
+    <members>
+        <member name="T:oscriptcomponent.ClientSsh">
+            <summary>
+            КлиентSSH
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.ClientSsh.CreateStream">
+            <summary>
+            Получить Поток
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.ClientSsh.Create">
+            <summary>
+            Получить Соединение
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.ClientSsh.CreateScp">
+            <summary>
+            Получить SCP
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.ClientSsh.SetSshKey(System.String,System.String)">
+            <summary>
+            Установить ключ
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.ClientSsh.Constructor(ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue,ScriptEngine.Machine.IValue)">
+            <summary>
+            Создает КлиентSSH
+            </summary>
+            <returns>КлиентSSH</returns>
+            <param name="host">Хост</param>>
+            <param name="port">Хост</param>>
+            <param name="user">Хост</param>>
+            <param name="pass">Хост</param>>
+        </member>
+        <member name="T:oscriptcomponent.Connection">
+            <summary>
+            Класс Соединение
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.Connection.Execute(System.String)">
+            <summary>
+            Выполнить комманду
+            </summary>
+            <returns>Результат выполнения</returns>
+        </member>
+        <member name="M:oscriptcomponent.Connection.Disconnect">
+            <summary>
+            Закрыть соединение
+            </summary>
+        </member>
+        <member name="T:oscriptcomponent.Scp">
+            <summary>
+            Класс Соединение
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.Scp.#ctor(Renci.SshNet.SftpClient)">
+            <summary>
+            Конструктор 
+            </summary>
+            <param name="scp"></param>
+        </member>
+        <member name="M:oscriptcomponent.Scp.Exists(System.String)">
+            <summary>
+            Существует
+            </summary>
+            <param name="path">Путь к файлу или каталогу</param>
+            <returns>
+            <c>true</c> если файл или каталог существует; в противном случае <c>false</c>.
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:oscriptcomponent.Scp.ListDirectory(System.String)" -->
+        <member name="M:oscriptcomponent.Scp.CreateDirectory(System.String)">
+            <summary>
+            Создать каталог
+            </summary>
+            <param name="path">Путь к новому каталогу.</param>
+        </member>
+        <member name="M:oscriptcomponent.Scp.DeleteDirectory(System.String)">
+            <summary>
+            Удалить каталог
+            </summary>
+            <param name="path">Путь к удаляемому каталогу.</param>
+        </member>
+        <member name="M:oscriptcomponent.Scp.UploadFile(System.String,System.String,ScriptEngine.Machine.IValue)">
+            <summary>
+            Отправить Файл
+            </summary>
+            <param name="fileName">Путь к отправляемому файлу.</param>
+            <param name="dest">Путь к файлу на сервере.</param>
+            <param name="canOwerwrite">если указано <c>true</c>, то существующий файл на сервере будет перезаписан.</param>
+        </member>
+        <member name="M:oscriptcomponent.Scp.DownloadFile(System.String,System.String)">
+            <summary>
+            Получить Файл
+            </summary>
+            <param name="src">Путь к файлу на сервере.</param>
+            <param name="dest">Путь для загрузки файла.</param>
+        </member>
+        <member name="M:oscriptcomponent.Scp.DeleteFile(System.String)">
+            <summary>
+            Удалить файл
+            </summary>
+            <param name="path">Путь к файлу для удаления.</param>
+        </member>
+        <member name="M:oscriptcomponent.Scp.Disconnect">
+            <summary>
+            Закрыть соединение
+            </summary>
+        </member>
+        <member name="T:oscriptcomponent.Stream">
+            <summary>
+            Класс Поток
+            </summary>
+        </member>
+        <member name="M:oscriptcomponent.Stream.WriteLine(System.String)">
+            <summary>
+            Записать в поток
+            </summary>
+            <returns>РезультатВыполнения</returns>
+        </member>
+        <member name="M:oscriptcomponent.Stream.DisconnectStream">
+            <summary>
+            Закрыть соединение
+            </summary>
+        </member>
+    </members>
+</doc>
