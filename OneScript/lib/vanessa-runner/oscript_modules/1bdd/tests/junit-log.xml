@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testsuites name="1bdd" time="0" tests="1" failures="0" skipped="0">
+    <testsuite name="Получение данных покрытие кода">
+        <properties />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="Я создаю временный каталог и сохраняю его в контекст" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="Я устанавливаю временный каталог как рабочий каталог" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="Я создаю каталог &quot;coverage&quot; в рабочем каталоге" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="Я установил рабочий каталог как текущий каталог" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="каталог &quot;coverage&quot; существует" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="я устанавливаю в контексте признак статистики скриптов OneScript в каталоге &quot;coverage&quot;" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="файл &quot;coverage/*.json&quot; не существует" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="Я очищаю параметры команды &quot;oscript&quot; в контексте" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="Я выполняю команду &quot;oscript&quot; c параметрами &quot;&lt;КаталогПроекта&gt;\tests\fixtures\СкриптДляПроверкиПокрытия.os&quot;" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="файл &quot;coverage\*.json&quot; существует" status="passed" />
+        <testcase classname="Включение и выключение признака покрытия кода в контексте" name="я удаляю из контекста признак статистики скриптов OneScript" status="passed" />
+    </testsuite>
+</testsuites>
