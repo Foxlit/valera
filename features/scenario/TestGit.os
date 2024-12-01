@@ -1,6 +1,7 @@
 #use gitrunner
 
 Процедура ЗабратьДанныеИзГит()
+    //123
     КаталогРепозитория = "E:\eremin\repo\valera";
     ПутьКВнешнемуРепозиторию = "https://github.com/Foxlit/valera";
     
